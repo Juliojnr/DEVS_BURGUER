@@ -303,6 +303,51 @@ section .card-wrapper-1 {
     height: auto;
 }
 
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+}
+.main-content{
+    display: flex;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 8px 0px; 
+}
+.left .social{
+    padding: 3%;
+
+}
+
+.center .content{
+    padding: 0 70px;
+
+
+}
+.box h2{
+    font-size: 15px;
+    font-weight: 1000;
+    text-transform: uppercase;
+}
+.box .content{
+    margin: 8px 8 0 0;
+}
+.left .content .social{
+    margin: 10px 0 0 0;
+}
+.left .content .social a{
+    padding: 0 2px;    
+}
+.left .content .social a span{
+   padding: auto;
+}
+.right .social{
+    padding-left: 10px;
+}
+
+
 
 
   
