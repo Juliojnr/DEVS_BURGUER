@@ -7,8 +7,8 @@
 body {
     font-family: 'Roboto', sans-serif; ;
     text-align: center;
-    background-color: brown;
-    color: #fff;
+    background-color: rgb(236, 85, 85);
+    color: rgb(255, 255, 255);
 }
 
 header {
@@ -26,10 +26,11 @@ header {
     margin: 0px 0 5px;
 }
 
-.page-subtitle {
+.menu-subtitle {
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 500;
+    font-size: 50px;
 }
 
 /* Produto catalogo */
@@ -61,13 +62,66 @@ section .card-wrapper {
 }
 
 section .card-item {
-    height: 400px;
-    background: rgb(93, 47, 47);
+    height: 200px;
+    background: rgb(255, 255, 255);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    padding: 8px;
+}
+
+.card-item-1 {
+    height: 200px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+}
+
+.card-item-1 img {
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    
+    
+}
+
+.card-item img {
+    margin-top: 4px;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+}
+
+.card-item button {
+    margin-top: 5px;
+    border-radius: 40px;
+}
+
+.card-item-1 button {
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.card-item-1 h3 {
+    font-weight: bold;
+    color: black
+}
+
+.card-item h3 {
+    font-weight: bold;
+    color: black
+}
+
+.card-item p {
+    color: rgb(0, 0, 0);
+}
+
+.card-item-1 p {
+    color: rgb(0, 0, 0);
 }
 
 .card-content {
@@ -77,3 +131,23 @@ section .card-item {
     align-items: center;
     justify-content: space-around;
 }
+
+/* Catalogo de bebidas
+**
+**
+**
+*/
+.container-1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-subtitle-1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+
+
