@@ -1,27 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <center>
-        <h1>Título da Página Principal</h1>
-        <button onclick="carrinho()">ENTRAR NO CARRINHO</button>
-    </center>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h2>Menu</h2>
-    <h4>Hamburguer - 1</h4>
-    <button onclick="burger1()">Adicionar ao carrinho</button>
-    <h4>Hamburguer - 2</h4>
-    <button onclick="burger2()">Adicionar ao carrinho</button>
-    <h4>Hamburguer - 3</h4>
-    <button onclick="burger3()">Adicionar ao carrinho</button>
-    <h4>Hamburguer - 4</h4>
-    <button onclick="burger4()">Adicionar ao carrinho</button>
-    <script src="bundle.js"></script>
+    <header>
+        <h1 class="menu-title">
+            DevsBurguer
+        </h1>
+        <h2>Programar de barriga vazia não da!</h2>
+    </header>
+
+    <div class="container">
+        <div class="menu-subtitle">
+            <p>Escolha o que você Deseja</p>
+        </div>
+    </div>
+    <section class="catalogo" id="catalog">
+        <div class="content">
+            <div class="title-wrapper-catalog">
+            </div>
+            <div class="filter-card">
+            </div>
+            <center>
+            <div class="card-wrapper">
+                <div class="card-item">
+                    <img src="fotos_hamburguers/hemburguer-1.png" alt="burguer">
+                    <div class="card-content">
+                        <h3>Xtudo-duplo</h3>
+                        <p>2 Carne, queijo, ovo, bacon, salada, gergelim</p>
+                        <button type="button">Quero esse</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="fotos_hamburguers/hamburguer-2.png" alt="burguer">
+                    <div class="card-content">
+                        <h3>Xtudo-duplo</h3>
+                        <p>2 Carne, queijo, ovo, bacon, salada, gergelim</p>
+                        <button type="button">Quero esse</button>
+                    </div>
+                </div>
+                <div class="card-item-1">
+                    <img src="fotos_hamburguers/hamburguer-6.png" alt="burguer">
+                    <div class="card-content">
+                        <h3>Xtudo-duplo</h3>
+                        <p>2 Carne, queijo, ovo, bacon, salada, gergelim</p>
+                        <button type="button">Quero esse</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="fotos_hamburguers/hamburguer-4.png" alt="burguer">
+                    <div class="card-content">
+                        <h3>Xtudo-duplo</h3>
+                        <p>2 Carne, queijo, ovo, bacon, salada, gergelim</p>
+                        <button type="button">Quero esse</button>
+                    </div>
+                </div>
+                <div class="card-item-1">
+                    <img src="fotos_hamburguers/hamburguer-5.png" alt="burguer">
+                    <div class="card-content">
+                        <h3><b>Xtudo-duplo</b></h3>
+                        <p>2 Carne, queijo, ovo, bacon, salada, gergelim</p>
+                        <button type="button">Quero esse</button>
+                    </div>
+                </div>
+                <div class="card-item-1">
+                    <img src="fotos_hamburguers/hemburguer-8.png" alt="burguer">
+                    <div class="card-content">
+                        <h3>Xtudo-duplo</h3>
+                        <p>2 Carne, queijo, ovo, bacon, salada, gergelim</p>
+                        <button type="button">Quero esse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+    <div class="container-1">
+        <div class="menu-subtitle-1">
+            <p>Bebidas</p>
+        </div>
+    </div>
+    </section>
+    <section class="catalogo-bebidas" id="catalogo">
+        <div class="content">
+            <div class="title-wrapper-catalog">
+            </div>
+            <div class="filter-card">
+            </div>
+            <center>
+            <div class="card-wrapper">
+                <div class="card-item">
+                    <img src="fotos_hamburguers/hemburguer-1.png" alt="burguer">
+                    <div class="card-content">
+                        <h3>Xtudo-duplo</h3>
+                        <p>2 Carne, queijo, ovo, bacon, salada, gergelim</p>
+                        <button type="button">Quero esse</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="fotos_hamburguers/hamburguer-2.png" alt="burguer">
+                    <div class="card-content">
+                        <h3>Xtudo-duplo</h3>
+                        <p>2 Carne, queijo, ovo, bacon, salada, gergelim</p>
+                        <button type="button">Quero esse</button>
+                    </div>
+                </div>
+                <div class="card-item-1">
+                    <img src="fotos_hamburguers/hamburguer-6.png" alt="burguer">
+                    <div class="card-content">
+                        <h3>Xtudo-duplo</h3>
+                        <p>2 Carne, queijo, ovo, bacon, salada, gergelim</p>
+                        <button type="button">Quero esse</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="fotos_hamburguers/hamburguer-4.png" alt="burguer">
+                    <div class="card-content">
+                        <h3>Xtudo-duplo</h3>
+                        <p>2 Carne, queijo, ovo, bacon, salada, gergelim</p>
+                        <button type="button">Quero esse</button>
+                    </div>
+                </div>
+                <div class="card-item-1">
+                    <img src="fotos_hamburguers/hamburguer-5.png" alt="burguer">
+                    <div class="card-content">
+                        <h3><b>Xtudo-duplo</b></h3>
+                        <p>2 Carne, queijo, ovo, bacon, salada, gergelim</p>
+                        <button type="button">Quero esse</button>
+                    </div>
+                </div>
+                <div class="card-item-1">
+                    <img src="fotos_hamburguers/hemburguer-8.png" alt="burguer">
+                    <div class="card-content">
+                        <h3>Xtudo-duplo</h3>
+                        <p>2 Carne, queijo, ovo, bacon, salada, gergelim</p>
+                        <button type="button">Quero esse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+    </section>
 </body>
 </html>
-
-
