@@ -1,27 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <center>
-        <h1>Título da Página Principal</h1>
-        <button onclick="carrinho()">ENTRAR NO CARRINHO</button>
-    </center>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=VT323" />
 </head>
 <body>
-    <h2>Menu</h2>
-    <h4>Hamburguer - 1</h4>
-    <button onclick="burger1()">Adicionar ao carrinho</button>
-    <h4>Hamburguer - 2</h4>
-    <button onclick="burger2()">Adicionar ao carrinho</button>
-    <h4>Hamburguer - 3</h4>
-    <button onclick="burger3()">Adicionar ao carrinho</button>
-    <h4>Hamburguer - 4</h4>
-    <button onclick="burger4()">Adicionar ao carrinho</button>
-    <script src="bundle.js"></script>
+    <header>
+        <h1 class="menu-title">
+            <div class="logo">
+            <img src="fotos_bebidas/logo.png" alt="logo">
+            </div>
+        </h1>
+        <h2>Programar de barriga vazia não da!</h2>
+    </header>
+
+    <div class="container">
+        <div class="menu-subtitle">
+            <p>Escolha o que você Deseja</p>
+        </div>
+    </div>
+    <section class="catalogo" id="catalog">
+        <div class="content">
+            <div class="title-wrapper-catalog">
+            </div>
+            <div class="filter-card">
+            </div>
+            <center>
+            <div class="card-wrapper">
+                <div class="card-item">
+                    <div class="xegg">
+                    <img src="fotos_hamburguers/hemburguer-1.png" alt="burguer">
+                    </div>
+                    <div class="card-content">
+                        <h3>X-Egg</h3>
+                        <p>1 carne, ovo, queijo</p>
+                        <div>
+                            <p>R$ 15,99</p>
+                            <button onclick="clickBurguer()" class="button button1" >Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="xbacon2">
+                    <img src="fotos_hamburguers/hamburguer-2.png" alt="burguer">
+                    </div>
+                    <div class="card-content">
+                        <h3>X-bacon</h3>
+                        <p>1 carne, bacon, 1 queijo</p>
+                        <div>
+                            <p>R$ 17,99</p>
+                            <button onclick="clickBurguer()" class="button button1" >Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item-1">
+                    <div class="xtudoduplo">
+                    <img src="fotos_hamburguers/hamburguer-6.png" alt="burguer">
+                    </div>
+                    <div class="card-content">
+                        <h3>X-larica</h3>
+                        <p>2 Carne, 2 queijo, salada, gergelim</p>
+                        <div>
+                            <p>R$ 19,90</p>
+                            <button onclick="clickBurguer()" class="button button1" >Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="xsalada">
+                    <img src="fotos_hamburguers/hamburguer-4.png" alt="burguer">
+                    </div>
+                    <div class="card-content">
+                        <h3>X-salada</h3>
+                        <p>1 Carne, queijo, bacon, salada, gergelim</p>
+                        <div>
+                            <p>R$ 16,99</p>
+                            <button onclick="clickBurguer()" class="button button1" >Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item-1">
+                    <div class="xduplo">
+                    <img src="fotos_hamburguers/hamburguer-5.png" alt="burguer">
+                    </div>
+                    <div class="card-content">
+                        <h3><b>X-duplo</b></h3>
+                        <p>2 Carnes, 2 queijos, picles, gergelim</p>
+                        <div>
+                            <p>R$ 18,99</p>
+                            <button onclick="clickBurguer()" class="button button1" >Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item-1">
+                    <div class="vegano">
+                    <img src="fotos_hamburguers/vegano" alt="burguer">
+                    </div>
+                    <div class="card-content">
+                        <h3>X-Vegano</h3>
+                        <p>Carne de lentilha, cebola, cheiro verde</p>
+                        <div>
+                            <p>R$ 22,99</p>
+                            <button onclick="clickBurguer()" class="button button1" >Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+    <div class="container-1">
+        <div class="menu-subtitle-1">
+            <p>Bebidas</p>
+        </div>
+    </div>
+    </section>
+    <section class="catalogo-bebidas" id="catalogo">
+        <div class="content">
+            <div class="title-wrapper-catalog">
+            </div>
+            <div class="filter-card">
+            </div>
+            <center>
+            <div class="card-wrapper-1">
+                <div class="card-item-3">
+                    <img src="fotos_bebidas/pepsi" alt="burguer">
+                    <div class="card-content-1">
+                        <h3>Pepsi</h3>
+                        <div>
+                            <p>R$ 6,00</p>
+                            <button onclick="clickBurguer()" class="button button1" >Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item-3">
+                    <img src="fotos_bebidas/fanta" alt="burguer">
+                    <div class="card-content-1">
+                        <h3>Fanta Laranja</h3>
+                        <div>
+                            <p>R$ 5,50</p>
+                            <button onclick="clickBurguer()" class="button button1" >Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item-2">
+                    <img src="fotos_bebidas/bebida-2.png" alt="bebida">
+                    <div class="card-content-1">
+                        <h3>Coca-Cola</h3>
+                        <div>
+                            <p>R$ 6,00</p>
+                            <button onclick="clickBurguer()" class="button button1" >Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+    </section>
+</br>
 </body>
 </html>
-
-
