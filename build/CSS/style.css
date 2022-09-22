@@ -15,6 +15,7 @@ header {
     padding: 30px;
     border-bottom: 1px solid #333;
     font-weight: 700;
+    
 }
 
 .container {
@@ -365,8 +366,4 @@ footer {
     padding-left: 10px;
 }
 
-.menuFinalize {
-    visibility:hidden;
-}
-  
     
