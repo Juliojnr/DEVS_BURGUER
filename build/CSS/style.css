@@ -225,11 +225,27 @@ section .card-wrapper-1 {
     background-color: white; 
     color: black; 
     border: 2px solid rgb(236, 85, 85);
+    border-radius: 40px;
   }
 
 .button:hover {
     background-color: rgb(236, 85, 85);
     color: white;
+  }
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid rgb(236, 226, 85);
+    width: 300px;
+    height: 70px;
+  }
+
+.button2:hover {
+    background-color: rgb(236, 226, 85);
+    color: white;
+    width: 300;
+    height: 70px;
   }
 
   .card-item-3 img {
@@ -349,10 +365,8 @@ footer {
     padding-left: 10px;
 }
 
-
-
-
-  
-
+.menuFinalize {
+    visibility:hidden;
+}
   
     
