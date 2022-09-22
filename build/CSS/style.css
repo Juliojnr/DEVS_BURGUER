@@ -303,11 +303,11 @@ section .card-wrapper-1 {
     height: auto;
 }
 
-footer{
-    position: fixed;
+footer {
     bottom: 0px;
     width: 100%;
     background: rgb(0, 0, 0);
+    margin-top: 20px;
 }
 .main-content{
     display: flex;
