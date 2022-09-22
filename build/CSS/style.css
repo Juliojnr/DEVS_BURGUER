@@ -366,4 +366,11 @@ footer {
     padding-left: 10px;
 }
 
+.menu-subtitle p {
+    text-shadow: #000 1px 2px 1px;
+}
+
+.menu-subtitle-1 p {
+    text-shadow: #000 1px 2px 1px;
+}
     
