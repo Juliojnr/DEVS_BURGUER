@@ -143,9 +143,9 @@ function finalizePurchase () {
     if (isVegan) {
         let discount = xvegan.value * 0.10 
         let newValue = final_value - discount;
-        document.write (`<br><h3>valor final do pedido <s>R$${final_value.toFixed (2)}</s> R$${newValue.toFixed(2)}</h3>`)
+        document.write (`<br><h3>Valor final do pedido: <s>R$${final_value.toFixed (2)}</s> R$${newValue.toFixed(2)}</h3>`)
     } else {
-        document.write (`<br><h3>valor final do pedido R$${final_value.toFixed (2)}</h3>`)
+        document.write (`<br><h3>Valor final do pedido: R$${final_value.toFixed (2)}</h3>`)
     }
     
     document.write (`<h3><br>Informações do pedido</br></h3>`)
@@ -153,7 +153,7 @@ function finalizePurchase () {
     for (let index = 0; index < burguer.length; index++) {
         document.write (`<br><b>Hambúrguer:</b> ${burguer[index].product_name}<br>`)
         document.write (`<b>Valor:</b> R$${burguer[index].value.toFixed(2)}<br>`)
-        document.write (`<b>Igredientes:</b> ${burguer[index].igredients}<br>`)
+        document.write (`<b>Ingredientes:</b> ${burguer[index].igredients}<br>`)
         document.write ('-----------------------------------------------------------------')
     }
 
