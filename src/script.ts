@@ -1,33 +1,33 @@
 class Product  {
-    public product_name: string
-   public value: number;
+    public product_name: string;
+    public value: number;
 
-   constructor (product_name: string, value: number) {
-       this.product_name = product_name;
-       this.value = value;
-   }
+    constructor (product_name: string, value: number) {
+        this.product_name = product_name;
+        this.value = value;
+    }
 }
 
 class Burguer extends Product {
-   public igredients: string;
-   public isVegan: boolean;
+    public igredients: string;
+    public isVegan: boolean;
 
-   constructor (product_name: string, value: number, igredients: string, isVegan:boolean) {
-       super(product_name,value);
-       this.igredients = igredients;
-       this.isVegan = isVegan;
-   }
+    constructor (product_name: string, value: number, igredients: string, isVegan:boolean) {
+        super (product_name, value);
+        this.igredients = igredients;
+        this.isVegan = isVegan;
+    }
 }
 
 class Drinks extends Product {
-  public type: string;
-   public alcoholic: boolean;
+    public type: string;
+    public alcoholic: boolean;
 
-   constructor (product_name: string, value: number, type: string, alcoholic:boolean) {
-       super(product_name,value);
-       this.type = type;
-       this.alcoholic = alcoholic;
-   }
+    constructor (product_name: string, value: number, type: string, alcoholic:boolean) {
+        super (product_name, value);
+        this.type = type;
+        this.alcoholic = alcoholic;
+    }
 }
 
 class Client {
@@ -39,70 +39,132 @@ class Client {
         this.address = address;
     }
 }
-
+//Variáveis
+let isVegan = false
 let final_value = 0
+let itens = 0;
 const products: Product[] = []
 const burguer: Burguer[] = []
-
-let isVegan: false
-
-
-let xegg= new Burguer('X-Egg',15.99,'1 Carne, ovo, queijo',false);
-let xbacon = new Burguer('X-Bacon', 17.99,'1 Carne, bacon, 1 queijo', false);
-let xlarica = new Burguer('X-Larica', 19.90, '2 Carnes, 2 queijos, salada, gergelim',false);
-let xsalada = new Burguer('X-Salada', 16.99, '1 Carne, queijo, bacon, salada, gergelim',false);
-let xduplo = new Burguer('X-Duplo', 18.99,'2 Carnes, 2 queijos, picles, gergelim',false);
-let xvegan = new Burguer('X-Vegan', 22.99,'Carne de lentilha, cebola, cheiro verde',true)
+const drinks: Drinks [] = []
+//Objetos
+let xegg= new Burguer ('X-Egg',15.99,'Carne, ovo, queijo',false);
+let xbacon = new Burguer ('X-Bacon', 17.99,'Carne, bacon, queijo', false);
+let xlarica = new Burguer ('X-Larica', 19.90, '2x Carnes, 2x queijos, salada, gergelim',false);
+let xsalada = new Burguer ('X-Salada', 16.99, 'Carne, queijo, bacon, salada, gergelim',false);
+let xduplo = new Burguer ('X-Duplo', 18.99,'2x Carnes, 2x queijos, picles, gergelim',false);
+let xvegan = new Burguer ('X-Vegano', 22.99,'Carne de lentilha, cebola, cheiro verde',true)
+let coca = new Drinks ('Coca-Cola', 6.00, 'Refrigerante', false)
+let pepsi = new Drinks ('Pepsi', 6.00, 'Refrigerante', false)
+let fanta = new Drinks ('Fanta laranja', 5.50, 'Refrigerante', false)
 
 function Fxegg () {
-    alert('Produto adicionado ao carrinho');
+    alert ('X-Egg adicionado ao carrinho');
     final_value += xegg.value;
-    products.push(xegg);
-    burguer.push(xegg);
+    burguer.push (xegg);
+    itens++
 }
 
 function Fxbacon () {
-    alert('Produto adicionado ao carrinho')
+    alert ('X-Bacon adicionado ao carrinho')
     final_value += xbacon.value
-    products.push(xbacon)
-    burguer.push(xbacon);
+    burguer.push (xbacon)
+    itens++
 }
 
 function Fxduplo () {
-    alert('Produto adicionado ao carrinho')
+    alert ('X-Duplo adicionado ao carrinho')
     final_value += xduplo.value
-    products.push(xduplo)
-    burguer.push(xduplo)
+    burguer.push (xduplo)
+    itens++
 }
 
 function Fxlarica () {
-    alert('Produto adicionado ao carrinho')
+    alert ('X-larica adicionado ao carrinho')
     final_value += xlarica.value
-    products.push(xlarica)
-    burguer.push(xlarica)
+    burguer.push (xlarica)
+    itens++
 }
 
 function Fxsalada () {
-    alert('Produto adicionado ao carrinho')
+    alert ('X-salada adicionado ao carrinho')
     final_value += xsalada.value
-    products.push(xsalada)
-    burguer.push(xsalada)
+    burguer.push (xsalada)
+    itens++
+}
+
+function Fxvegan () {
+    alert ('X-Vegano adicionado ao carrinho')
+    final_value += xvegan.value
+    xvegan.value -= 2.3
+    isVegan = xvegan.isVegan
+    burguer.push (xvegan)
+    itens++
+}
+
+function Fcoca () {
+    alert ('Coca-Cola adicionada ao carrinho')
+    final_value += coca.value
+    drinks.push (coca)
+    itens++
+}
+
+function Fpepsi () {
+    alert('Pepsi adicionada ao carrinho')
+    final_value += pepsi.value
+    drinks.push (pepsi)
+    itens++
+}
+
+function Ffanta () {
+    alert ('Fanta laranja adicionada ao carrinho')
+    final_value += fanta.value
+    drinks.push (fanta)
+    itens++
 }
 
 function finalizePurchase () {
-    document.write('<h1>Pedido Finalizado</h1>')
-    document.write('<h3>O site <DEVS BURGUER> está passando por algumas manutençõeso</h3>')
-    document.write('<h3>Aguardem as novidades ( ͡° ͜ʖ ͡°)</h3>')
-    const username = prompt('Digite seu nome')
-    const address = prompt('Digite seu endereço')
+    function UserException (message) {
+        this.message = message;
+        this.name = "UserException";
+     }
+     
+     try {
+        if (itens < 1) {
+            throw new UserException("O usuário deve adicionar ao menos um item para o carrinho");
+        }
+        document.write ('<h1>Pedido Finalizado</h1>')
+    document.write ('<h3>AVISO! O site está passando por algumas manutenções （︶︿︶）</h3>')
+    document.write ('<h3>Pedimos que aguardem as novidades ( ͡° ͜ʖ ͡°)</h3>')
+    const username = prompt ('Digite seu nome')
+    const address = prompt ('Digite seu endereço')
     let client = new Client (username, address)
-    document.write(`<h3>Obrigado ${client.username} seu pedido já será entregue para ${client.address}</h3>`)
-    document.write(`<h3>valor final do pedido R$${final_value.toFixed(2)}</h3>`)
-
-    for (let index = 0; index < products.length; index++) {
-        document.write (`<h3><br>Seu pedido</br></h3>`)
-        document.write (`Hambúrguer ${products[index].product_name}`)
-        document.write (`Valor R$${products[index].value.toFixed(2)}`)
-        document.write (`Igredientes ${burguer[index].igredients}`)
+    document.write (`<br><h3>Tudo pronto ${client.username}. Agradecemos sua preferência! <br>Seu pedido está pronto para ser entregue ao endereço (${client.address})</h3>`)
+    
+    if (isVegan) {
+        let discount = xvegan.value * 0.10 
+        let newValue = final_value - discount;
+        document.write (`<br><h3>valor final do pedido <s>R$${final_value.toFixed (2)}</s> R$${newValue.toFixed(2)}</h3>`)
+    } else {
+        document.write (`<br><h3>valor final do pedido R$${final_value.toFixed (2)}</h3>`)
     }
+    
+    document.write (`<h3><br>Informações do pedido</br></h3>`)
+    document.write ('-----------------------------------------------------------------')
+    for (let index = 0; index < burguer.length; index++) {
+        document.write (`<br><b>Hambúrguer:</b> ${burguer[index].product_name}<br>`)
+        document.write (`<b>Valor:</b> R$${burguer[index].value.toFixed(2)}<br>`)
+        document.write (`<b>Igredientes:</b> ${burguer[index].igredients}<br>`)
+        document.write ('-----------------------------------------------------------------')
+    }
+
+    for (let index = 0; index < drinks.length; index++) {
+        document.write (`<br><b>Bebida:</b> ${drinks[index].product_name}<br>`)
+        document.write (`<b>Valor:</b> R$${drinks[index].value.toFixed(2)}<br>`)
+        document.write ('-----------------------------------------------------------------')
+    }
+     } catch (error) {
+         console.log(error.name); //UserException
+         console.log(error.message); //O número deve ser inteiro e positivo
+         alert(error.message)
+     }
 }

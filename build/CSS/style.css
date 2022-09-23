@@ -237,13 +237,14 @@ section .card-wrapper-1 {
 .button2 {
     background-color: white; 
     color: black; 
-    border: 2px solid rgb(236, 226, 85);
+    font-size: 30px;
+    border: 2px solid rgb(236, 85, 85);
     width: 300px;
     height: 70px;
   }
 
 .button2:hover {
-    background-color: rgb(236, 226, 85);
+    background-color: rgb(236, 85, 85);
     color: white;
     width: 300;
     height: 70px;
